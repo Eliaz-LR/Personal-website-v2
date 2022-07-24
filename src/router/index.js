@@ -1,13 +1,29 @@
 import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/Home.vue";
+import Blog from "../views/Blog.vue";
+import Article from "../views/Article.vue";
 
-const Home = { template: '<div>Home</div>' }
 const routes = [
-    { path: '/', component: Home }
+    {
+        name: "home",
+        path: '/', 
+        component: Home 
+    },
+    {
+        name: "blog",
+        path: '/blog',
+        component: Blog
+    },
+    {
+        name: "article",
+        path: '/article/:id',
+        component: Article
+    }
 ]
 
-const router = VueRouter.createRouter({
-    history: VueRouter.createWebHistory(),
-    routes
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
 })
 
 export default router;

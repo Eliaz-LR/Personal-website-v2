@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-// import router from "./router";
+import router from "./router";
+import dayjs from 'dayjs';
 
 const app = createApp(App);
-// app.use(router);
+app.use(router);
+app.config.globalProperties.$dayjs = dayjs;
 app.mount('#app');
