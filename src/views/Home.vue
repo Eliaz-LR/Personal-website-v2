@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <h1>Welcome</h1>
+    <h1 class="mt-10">Welcome</h1>
     <Bio/>
     <hr class=" my-4"/>
     <Projects/>
