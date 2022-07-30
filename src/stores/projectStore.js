@@ -17,5 +17,6 @@ export const useProjectStore = defineStore("projectStore",{
     getters: {
         getProjects: (state) => state.projects,
         getFeaturedProjects: (state) => state.projects.filter(project => project.featured),
+        getOtherProjects: (state) => state.projects.filter(project => !project.featured),
     },
 });

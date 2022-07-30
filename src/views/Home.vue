@@ -1,9 +1,10 @@
 <script>
 import Bio from "../components/Bio.vue";
 import Projects from "../components/Projects.vue";
+import Technologies from "../components/Technologies.vue";
 export default {
   setup() {},
-  components: { Bio, Projects },
+  components: { Bio, Projects, Technologies },
 };
 </script>
 
@@ -12,4 +13,6 @@ export default {
     <Bio/>
     <hr class=" my-4"/>
     <Projects/>
+    <hr class=" my-4"/>
+    <Technologies/>
 </template>
