@@ -2,6 +2,8 @@
     <h2>
         Hi, I'm a {{ age }} years-old developer who is curently studying at 
         <a href='https://www.iut-clermont.fr/formations/dut-informatique/'>UCA</a>.
+        <br/>
+        Check out my <a href="https://github.com/Eliaz-LR">Github</a> and my <a href='https://www.linkedin.com/in/eliaz-le-riche'>LinkedIn</a>.
     </h2>
 </template>
 

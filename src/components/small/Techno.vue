@@ -1,5 +1,5 @@
 <template>
-<div @click="desc" class=" max-w-lg flex flex-row w-auto shrink-0 border-[1px] rounded-md m-2">
+<div @click="desc" class="cursor-pointer hover:bg-zinc-800 max-w-lg flex flex-row w-auto shrink-0 border-[1px] rounded-md m-2">
   <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
     :src="image"
     :alt="name"/>

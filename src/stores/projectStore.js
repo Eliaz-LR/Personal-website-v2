@@ -5,11 +5,11 @@ export const useProjectStore = defineStore("projectStore",{
         projects: [
             {
                 id: 1,
-                name: "Project 1",
+                name: "This website",
                 image : "https://picsum.photos/id/1/200/300",
                 description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                technologies: [],
-                link: "https://www.google.com",
+                technologies: ["Vue.js", "JavaScript", "HTML", "CSS"],
+                link: "https://eliaz-lr.dev/",
                 featured: true,
             }
         ],
