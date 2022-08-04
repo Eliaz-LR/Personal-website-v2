@@ -14,7 +14,7 @@ export default {
     },
     created() {
         this.interval = setInterval(() => {
-            this.age = (this.$dayjs().diff(this.$dayjs('2000-12-03'), 'year',true)).toFixed(8);
+            this.age = (this.$dayjs().diff(this.$dayjs('2000-12-03'), 'year',true)).toFixed(9);
         }, 50)
     }
 }

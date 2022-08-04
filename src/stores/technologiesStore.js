@@ -8,14 +8,14 @@ export const useTechnologiesStore = defineStore("technologiesStore",{
                 image : new URL("../assets/python.svg", import.meta.url) .href,
                 level: 3,
                 category: "Programming Language",
-                comments: "Python is my go to language when making projects in many areas such as AI, Data Science and automatisation.",
+                comments: "Python is my go-to language when making projects in many areas such as AI, Data Science and automatisation.",
             },
             {
                 name: "Vue.js",
                 image : new URL("../assets/vue.svg", import.meta.url) .href,
                 level: 3,
                 category: "Framework",
-                comments: "Vue.js is my go to framework when making web applications.",
+                comments: "Vue.js is my go-to framework when making web applications.",
             },
             {
                 name: "C#",
@@ -36,7 +36,7 @@ export const useTechnologiesStore = defineStore("technologiesStore",{
                 image : new URL("../assets/git.svg", import.meta.url) .href,
                 level: 4,
                 category: "Other",
-                comments: "Git is my go to version control system. I've used it for many projects and I'm very familiar with it.",
+                comments: "Git is my go-to version control system. I've used it for many projects and I'm very familiar with it.",
             },
             {
                 name: "C++",
