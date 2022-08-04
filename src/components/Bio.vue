@@ -1,6 +1,8 @@
 <template>
-    Hi, I'm a {{ age }} years-old developer who is curently studying at 
-    <a href='https://www.iut-clermont.fr/formations/dut-informatique/'>UCA</a>.
+    <h2>
+        Hi, I'm a {{ age }} years-old developer who is curently studying at 
+        <a href='https://www.iut-clermont.fr/formations/dut-informatique/'>UCA</a>.
+    </h2>
 </template>
 
 <script>

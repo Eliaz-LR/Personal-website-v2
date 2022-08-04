@@ -2,25 +2,28 @@
     <div class="flex flex-col mr-4">
         <h1>Tech I've used before</h1>
         <h2>Programming languages</h2>
-        <div class="flex flex-row">
+        <div class="flex flex-row flex-wrap justify-center">
             <Techno v-for="techno in languages"
             :name="techno.name" 
             :image="techno.image" 
-            :level="techno.level_out_of_5"/>
+            :level="techno.level"
+            :comments="techno.comments"/>
         </div>
         <h2>Frameworks</h2>
-        <div class="flex flex-row">
+        <div class="flex flex-row flex-wrap justify-center">
             <Techno v-for="techno in frameworks"
             :name="techno.name" 
             :image="techno.image" 
-            :level="techno.level_out_of_5"/>
+            :level="techno.level"
+            :comments="techno.comments"/>
         </div>
         <h2>Other</h2>
-        <div class="flex flex-row">
+        <div class="flex flex-row flex-wrap justify-center">
             <Techno v-for="techno in other"
             :name="techno.name" 
             :image="techno.image" 
-            :level="techno.level_out_of_5"/>
+            :level="techno.level"
+            :comments="techno.comments"/>
         </div>
     </div>
 </template>
