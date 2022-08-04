@@ -1,5 +1,5 @@
 <template>
-<div @mouseover="hovered=true" @mouseleave="hovered=false" class=" max-w-lg flex flex-row w-auto shrink-0 border-[1px] rounded-md m-2">
+<div @click="desc" class=" max-w-lg flex flex-row w-auto shrink-0 border-[1px] rounded-md m-2">
   <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
     :src="image"
     :alt="name"/>
@@ -9,7 +9,7 @@
       {{level_txt}}
     </div>
   </div>
-  <p v-if="hovered" class="p-1 h-full">
+  <p v-if="display_description" class="p-1 h-full">
       {{comments}}
   </p>
 </div>
@@ -23,7 +23,13 @@ export default {
       return {
         level_txt: "To be determined",
         hovered: false,
+        display_description: false,
       }
+    },
+    methods: {
+      desc() {
+        this.display_description = !this.display_description;
+      },
     },
     mounted() {
       switch (this.level) {
