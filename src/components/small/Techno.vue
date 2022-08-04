@@ -1,5 +1,5 @@
 <template>
-<div class="flex shrink border-[1px] rounded-md m-2">
+<div class="flex flex-row shrink w-auto border-[1px] rounded-md m-2">
   <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
     :src="image"
     :alt="name"/>
