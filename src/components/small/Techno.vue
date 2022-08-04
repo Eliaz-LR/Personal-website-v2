@@ -1,9 +1,9 @@
 <template>
-<div @mouseover="hovered=true" @mouseleave="hovered=false" class=" max-w-md flex flex-row w-auto shrink-0 border-[1px] rounded-md m-2">
+<div @mouseover="hovered=true" @mouseleave="hovered=false" class=" max-w-lg flex flex-row w-auto shrink-0 border-[1px] rounded-md m-2">
   <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
     :src="image"
     :alt="name"/>
-  <div class=" p-4 flex flex-col justify-between leading-normal">
+  <div class="shrink-0 p-4 flex flex-col justify-between leading-normal">
     <div class="mb-8">
       <div class="font-semibold text-xl mb-2">{{ name }}</div>
       {{level_txt}}
