@@ -1,6 +1,6 @@
 <template>
-<div class="flex border-[1px] rounded-md m-2">
-  <img class ="mx-5 h-20 lg:h-auto lg:w-20 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+<div class="flex shrink border-[1px] rounded-md m-2">
+  <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
     :src="image"
     :alt="name"/>
   <div class=" p-4 flex flex-col justify-between leading-normal">

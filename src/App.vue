@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar.vue";
 
 <template>
   <Navbar/>
-  <div class="container">
+  <div class="w-auto flex flex-col">
     <router-view/>
   </div>
 </template>
