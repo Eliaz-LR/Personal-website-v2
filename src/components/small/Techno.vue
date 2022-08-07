@@ -1,12 +1,14 @@
 <template>
-<div @click="desc" class="cursor-pointer hover:bg-zinc-800 max-w-lg flex flex-row w-auto shrink-0 border-[1px] rounded-md m-2">
-  <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
-    :src="image"
-    :alt="name"/>
-  <div class="shrink-0 p-4 flex flex-col justify-between leading-normal">
-    <div class="mb-8">
-      <div class="font-semibold text-xl mb-2">{{ name }}</div>
-      {{level_txt}}
+<div @click="desc" class="cursor-pointer hover:bg-zinc-800 max-w-lg flex flex-col xl:flex-row w-auto border-[1px] rounded-md m-2">
+  <div class="flex flex-row shrink-0">
+    <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
+      :src="image"
+      :alt="name"/>
+    <div class="shrink-0 p-4 flex flex-col justify-between leading-normal">
+      <div class="mb-8">
+        <div class="font-semibold text-xl mb-2">{{ name }}</div>
+        {{level_txt}}
+      </div>
     </div>
   </div>
   <p v-if="display_description" class="p-1 h-full">
