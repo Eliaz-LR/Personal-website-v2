@@ -1,5 +1,5 @@
 <template>
-    <a class="block overflow-hidden border border-gray-100 rounded-lg shadow-sm m-4 2xl:mx-32" :href="link">
+    <a class="block overflow-hidden border border-gray-100 rounded-lg shadow-sm m-4 2xl:mx-32 transition-colors hover:bg-zinc-800" :href="link">
     <img
         class="object-cover w-full h-56 shadow-xl rounded-xl"
         :src="image"

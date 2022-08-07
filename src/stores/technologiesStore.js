@@ -66,6 +66,13 @@ export const useTechnologiesStore = defineStore("technologiesStore",{
                 category: "Framework",
                 comments: "I've used Tailwind CSS to make my websites and web applications.",
             },
+            {
+                name: "Firebase",
+                image : new URL("../assets/tech_logo/firebase.svg", import.meta.url) .href,
+                level: 3,
+                category: "Other",
+                comments: "I regularly use Firebase to host my websites and databases.",
+            },
         ],
     }),
     getters: {

@@ -7,7 +7,7 @@
         :description="projects.description"
         :link="projects.link"/>
     </div>
-    <h2>Other projects</h2>
+    <!-- <h2>Other projects</h2> -->
 </template>
 
 <script>
