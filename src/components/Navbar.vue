@@ -8,7 +8,7 @@
         <router-link to="/" class="m-5">Logo</router-link>
         <div class="mr-5">
             <router-link to="/" class="mr-5">Home</router-link>
-            <router-link to="/blog" class="mr-5">Blog</router-link>
+            <router-link to="/articles" class="mr-5">Articles</router-link>
         </div>
     </nav>
 </template>

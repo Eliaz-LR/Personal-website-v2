@@ -1,11 +1,11 @@
 <template>
     <h1>My projects</h1>
     <div class="">
-        <Project v-for="projects in projects"
-        :name="projects.name"
-        :image="projects.image"
-        :description="projects.description"
-        :link="projects.link"/>
+        <Project v-for="project in projects"
+        :name="project.name"
+        :image="project.image"
+        :description="project.description"
+        :link="project.link"/>
     </div>
     <!-- <h2>Other projects</h2> -->
 </template>

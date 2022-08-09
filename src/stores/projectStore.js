@@ -27,7 +27,7 @@ export const useProjectStore = defineStore("projectStore",{
                 image : new URL("../assets/proj_pic/OldWebsite.png", import.meta.url) .href,
                 description : "This was my first project with Javascript. It emulates the feel of a command line interface.",
                 technologies: ["Unity", "C#", "Firebase"],
-                link: "https://personal-website-eliaz.web.app/",
+                link: "https://old.eliaz-lr.dev/",
                 featured: true,
             },
         ],
