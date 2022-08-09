@@ -10,6 +10,9 @@
         :date_updated="article.date_updated"
         :tags="article.tags"
         />
+        <div v-if="articles.length === 0">
+            <p>No articles here... yet</p>
+        </div>
     </div>
 </template>
 

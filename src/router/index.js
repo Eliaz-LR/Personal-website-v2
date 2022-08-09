@@ -18,7 +18,15 @@ const routes = [
         name: "article",
         path: '/articles/:id',
         component: Article,
-        props: true
+        props: true,
+    },
+    {
+        name: "404",
+        path: "/:pathMatch(.*)",
+        component: () => import("../views/404.vue"),
+        meta: {
+            title: "404 Not Found",
+        },
     }
 ]
 
