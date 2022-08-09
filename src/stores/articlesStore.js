@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import markdown_test from "../assets/articles/test.md?raw";
 
 export const useArticlesStore = defineStore("articlesStore", {
     state: () => ({
@@ -6,7 +7,7 @@ export const useArticlesStore = defineStore("articlesStore", {
             {
                 id: "test",
                 title: "My first article",
-                markdown : new URL("../assets/articles/test.md", import.meta.url) .href,
+                markdown : markdown_test,
                 date_created: "2020-01-01",
                 date_updated: "2020-01-01",
                 tags: ["tag1", "tag2"],
