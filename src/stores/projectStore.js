@@ -30,6 +30,15 @@ export const useProjectStore = defineStore("projectStore",{
                 link: "https://old.eliaz-lr.dev/",
                 featured: true,
             },
+            {
+                id: 4,
+                name: "More projects available on my GitHub...",
+                image : new URL("../assets/proj_pic/GitHub.png", import.meta.url) .href,
+                description : "I have more projects on my GitHub. Check them out!",
+                technologies: [],
+                link: "https://github.com/Eliaz-LR",
+                featured: false,
+            },
         ],
     }),
     getters: {
