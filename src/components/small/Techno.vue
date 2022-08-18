@@ -1,5 +1,6 @@
 <template>
-<div @click="desc" class="cursor-pointer transition-colors hover:bg-zinc-800 max-w-lg flex flex-col xl:flex-row w-auto border-[1px] rounded-md m-2">
+<div @click="desc" class="cursor-pointer transition-colors max-w-lg flex flex-col xl:flex-row w-auto border-2 border-transparent bg-clip-border bg-gradient-to-r from-purple-500 to-blue-700 rounded-md m-2">
+  <div class="bg-clip-content bg-zinc-800 hover:bg-zinc-700">
   <div class="flex flex-row shrink-0">
     <img class ="mx-5 h-auto w-20 flex-none bg-cover rounded-t text-center overflow-hidden"
       :src="image"
@@ -14,6 +15,7 @@
   <p v-if="display_description" class="p-1 h-full">
       {{comments}}
   </p>
+  </div>
 </div>
 </template>
 <script>

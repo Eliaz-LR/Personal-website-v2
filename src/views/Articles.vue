@@ -29,3 +29,9 @@ export default {
 };
 
 </script>
+
+<style scoped>
+a{
+    @apply underline decoration-slice;
+}
+</style>

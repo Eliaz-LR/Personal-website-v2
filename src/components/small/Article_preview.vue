@@ -1,12 +1,18 @@
 <template>
-    <router-link :to="{name:'article', params : {id:id, title:title, markdown:markdown, date_created:date_created}}" class="bg-slate-400"> 
-        <h2>{{title}}</h2>
+    <router-link class="" :to="{name:'article', params : {id:id, title:title, markdown:markdown, date_created:date_created, date_updated:date_updated, tags:tags}}"> 
+        <h2 class="mx-5">{{this.$dayjs(date_created).format('DD MMM YY')}} - {{title}}</h2>
     </router-link>
 </template>
 
 <script>
 export default {
-    setup() {},
-    props: ["id","title", "markdown", "date_created", "date_updated", "tags"],
+    props : {
+        id: String,
+        title: String,
+        markdown: String,
+        date_created: String,
+        date_updated: String,
+        tags: Array
+    },
 };
 </script>
