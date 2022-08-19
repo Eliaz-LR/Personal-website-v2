@@ -5,12 +5,12 @@ export const useArticlesStore = defineStore("articlesStore", {
     state: () => ({
         articles: [
             {
-                id: "0",
-                title: "My first article",
+                id: "best_websites_TailwindCSS",
+                title: "The best websites I found for Tailwind CSS components",
                 markdown : markdown_test,
                 date_created: "2022-08-18",
                 date_updated: "2022-08-18",
-                tags: ["tag1", "tag2"],
+                tags: ["TailwindCSS", "CSS"],
             },
         ],
     }),

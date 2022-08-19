@@ -32,6 +32,6 @@ export default {
 
 <style scoped>
 a{
-    @apply underline decoration-slice;
+    @apply underline decoration-purple-600;
 }
 </style>

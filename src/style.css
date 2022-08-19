@@ -48,6 +48,26 @@ h2 {
 }
 
 
+.markdownit * > h1 {
+  @apply pb-4;
+}
+
+.markdownit * > a {
+  @apply underline decoration-purple-600;
+}
+
+.markdownit * >  {
+  @apply underline decoration-purple-400;
+}
+
+.markdownit * > li {
+  @apply list-disc;
+}
+
+.markdownit * > blockquote {
+  @apply border-l-2 pl-2;
+}
+
 .markdownit > div > p {
-  @apply pt-4;
+  @apply py-2;
 }
