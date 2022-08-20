@@ -1,45 +1,42 @@
 <template>
-{{this.$dayjs(date_created).format('DD MMM YYYY')}}
-<br/>
-<div class="flex flex-row flex-wrap justify-center">
-    <span v-for="tag in backup.tags" class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-    #{{tag}}
-    </span>
+<div class="mt-10 mx-2">
+  {{this.$dayjs(getArticleByID(this.id).date_created).format('DD MMM YYYY')}}
+  <br/>
+  <div class="flex flex-row flex-wrap justify-center">
+      <span v-for="tag in getArticleByID(this.id).tags" class="bg-zinc-100 rounded-full px-3 py-1 text-sm font-semibold text-zinc-800 mr-2">
+      #{{tag}}
+      </span>
+  </div>
+  <article class="markdownit text-left mt-5">
+    <Markdown  :source="getArticleByID(this.id).markdown" />
+  </article>
 </div>
-<article class="markdownit text-left mt-7 ">
-  <Markdown  :source="backup.markdown" />
-</article>
 </template>
 
 <script>
+import { useArticlesStore } from "../stores/articlesStore.js";
 import Markdown from 'vue3-markdown-it';
+import router from "../router";
 
 export default {
   name: 'Article',
     components: {
     Markdown
   },
-  props: ["id","title", "markdown", "date_created", "date_updated", "tags"],
-  data()  {
-    return {
-      backup :{
-        title: this.title,
-        markdown: this.markdown,
-        date_created: this.date_created,
-        date_updated: this.date_updated,
-        tags: this.tags,
-      },
-    }
+  props: ["id"],
+  setup() {
+    const store = useArticlesStore()
+    return {store}
   },
-  mounted() {
-    if (this.backup.markdown === undefined) {
-      console.log("Article.vue: markdown is undefined");
-      this.backup=JSON.parse(localStorage.getItem("backup"));
-    }
-    else {
-      console.log("Article.vue: markdown is defined");
-      localStorage.setItem("backup", JSON.stringify(this.backup));
-    }
+  methods: {
+    getArticleByID(id) {
+      const article = this.store.getArticleByID(id)
+      if (article===undefined) {
+        router.push('/404')
+        return 0
+      }
+      return article;
+    },
   },
 }
 </script>

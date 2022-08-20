@@ -47,7 +47,6 @@ h2 {
   text-align: center;
 }
 
-
 .markdownit * > h1 {
   @apply pb-4;
 }
@@ -56,12 +55,8 @@ h2 {
   @apply underline decoration-purple-600;
 }
 
-.markdownit * >  {
-  @apply underline decoration-purple-400;
-}
-
 .markdownit * > li {
-  @apply list-disc;
+  @apply list-disc py-1 pt-2;
 }
 
 .markdownit * > blockquote {
