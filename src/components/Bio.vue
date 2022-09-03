@@ -5,7 +5,7 @@
         <a href='https://www.iut-clermont.fr/formations/dut-informatique/'>UCA</a>.
         <br/>
         I'm interested in a lot of subjects ranging from economics to technology in general.<br/>
-        Check out my <a href="https://github.com/Eliaz-LR">Github</a>.
+        Check out my <a href="https://github.com/Eliaz-LR">Github</a>. You can also <a href="mailto:me@eliaz-lr.dev">email me here !</a>
     </h2>
 </template>
 
