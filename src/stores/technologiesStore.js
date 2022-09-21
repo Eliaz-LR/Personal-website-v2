@@ -73,6 +73,13 @@ export const useTechnologiesStore = defineStore("technologiesStore",{
                 category: "Other",
                 comments: "I regularly use Firebase to host my websites and databases.",
             },
+            {
+                name: "Vite",
+                image : new URL("../assets/tech_logo/vite.svg", import.meta.url) .href,
+                level: 3,
+                category: "Other",
+                comments: "I've used Vite to make my websites and web applications. It provides a dev server and a build system.",
+            },
         ],
     }),
     getters: {
