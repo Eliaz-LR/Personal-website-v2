@@ -12,6 +12,14 @@ export const useArticlesStore = defineStore("articlesStore", {
                 date_updated: "2022-08-20",
                 tags: ["TailwindCSS", "CSS"],
             },
+            {
+                id: "unity_ghost_collision",
+                title: "How I solved my ghost collision problems for my unity golf game",
+                markdown : Unity3d_ghost_collision_tips,
+                date_created: "2022-12-22",
+                date_updated: "2022-12-22",
+                tags: ["Unity3D", "GameDev", "Physics"],
+            }
         ],
     }),
     getters: {
