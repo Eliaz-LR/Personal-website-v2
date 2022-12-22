@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import best_websites_TailwindCSS from "../assets/articles/best_websites_TailwindCSS.md?raw";
+import Unity3d_ghost_collision_tips from "../assets/articles/Unity3d_ghost_collision_tips.md?raw";
 
 export const useArticlesStore = defineStore("articlesStore", {
     state: () => ({
