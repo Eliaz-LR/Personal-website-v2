@@ -38,9 +38,12 @@ h1 {
 }
 
 h2 {
-  @apply text-xl font-medium;
+  @apply text-2xl font-medium;
 }
 
+h3 {
+  @apply text-xl font-medium;
+}
 
 #app {
   margin: 0 auto;
@@ -64,5 +67,9 @@ h2 {
 }
 
 .markdownit > div > p {
-  @apply py-2;
+  @apply pt-2 pb-4;
+}
+
+.markdownit * > img {
+  @apply py-3;
 }

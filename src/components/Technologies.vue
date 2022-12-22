@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col mr-4">
         <h1>Tech I've used before</h1>
-        <h2>Programming languages</h2>
+        <h3>Programming languages</h3>
         <div class="flex flex-row flex-wrap justify-center">
             <Techno v-for="techno in languages"
             :name="techno.name" 
@@ -9,7 +9,7 @@
             :level="techno.level"
             :comments="techno.comments"/>
         </div>
-        <h2>Frameworks</h2>
+        <h3>Frameworks</h3>
         <div class="flex flex-row flex-wrap justify-center">
             <Techno v-for="techno in frameworks"
             :name="techno.name" 
@@ -17,7 +17,7 @@
             :level="techno.level"
             :comments="techno.comments"/>
         </div>
-        <h2>Other</h2>
+        <h3>Other</h3>
         <div class="flex flex-row flex-wrap justify-center">
             <Techno v-for="techno in other"
             :name="techno.name" 

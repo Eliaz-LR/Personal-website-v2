@@ -1,5 +1,5 @@
 <template>
-<div class="mt-10 mx-2">
+<div class="my-16 mx-2">
   {{this.$dayjs(getArticleByID(this.id).date_created).format('DD MMM YYYY')}}
   <br/>
   <div class="flex flex-row flex-wrap justify-center">
