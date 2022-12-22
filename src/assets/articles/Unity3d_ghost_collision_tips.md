@@ -21,7 +21,7 @@ Unity's collisions work better with bigger objects, this was however anoying for
 
 
 ## Solution 3 : The best and simplest solution
-Finally, after a lot of research, I found a simple solution that worked for me. This solution simply consists of lowering the ["Default Contact Offset"](https://docs.unity3d.com/ScriptReference/Physics-defaultContactOffset.html) value in the Physics page of Project Settings. 
+Finally, after a lot of research, I found a simple solution that worked for me. This solution simply consists of lowering the ["Default Contact Offset"](https://docs.unity3d.com/ScriptReference/Physics-defaultContactOffset.html) value in the Physics page of Project Settings. This is, however, not guaranteed to be a silver bullet since it depends a lot on the size of your objects.
 
 
 
