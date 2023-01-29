@@ -16,7 +16,7 @@ import Project from "./small/Project.vue";
 
 export default {
     setup() {
-        const projects = useProjectStore().getProjects;
+        const projects = useProjectStore().getFeaturedProjects;
         return { projects };
     },
     components: { Project },

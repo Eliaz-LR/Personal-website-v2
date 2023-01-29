@@ -10,13 +10,13 @@ export const useProjectStore = defineStore("projectStore",{
                 description : "This is my second portfolio website. I wanted to make it more user friendly.",
                 technologies: ["Vue.js", "JavaScript", "HTML", "CSS"],
                 link: "https://eliaz-lr.dev/",
-                featured: true,
+                featured: false,
             },
             {
                 id: 2,
                 name: "3D Minesweeper",
                 image : new URL("../assets/proj_pic/3dMinesweeper.png", import.meta.url) .href,
-                description : "I made a minesweeper game in 3D and first person view with an online leaderboard.",
+                description : "A minesweeper game in 3D and first person view with an online leaderboard.",
                 technologies: ["Unity", "C#", "Firebase"],
                 link: "https://play.unity.com/mg/other/webgl-build-482",
                 featured: true,
@@ -39,6 +39,15 @@ export const useProjectStore = defineStore("projectStore",{
                 link: "https://github.com/Eliaz-LR",
                 featured: false,
             },
+            {
+                id: 5,
+                name: "Golf Game",
+                image : new URL("../assets/proj_pic/GolfGame.png", import.meta.url) .href,
+                description : "A Golf game made in Unity.",
+                technologies: ["Unity", "C#", "Firebase"],
+                link: "https://github.com/Eliaz-LR/GolfGame",
+                featured: true,
+            }
         ],
     }),
     getters: {
