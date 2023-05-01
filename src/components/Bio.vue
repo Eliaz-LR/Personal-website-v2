@@ -1,11 +1,12 @@
 <template>
     <h3>
-        👋<br/>
-        Hi, I'm Eliaz, a {{ age }} years-old developer who is curently studying at 
+        👋<br />
+        Hi, I'm Eliaz, a {{ age }} years-old developer who is curently studying at
         <a href='https://www.iut-clermont.fr/formations/dut-informatique/'>UCA</a>.
-        <br/>
-        I'm interested in a lot of subjects ranging from economics to technology in general.<br/>
-        Check out my <a href="https://github.com/Eliaz-LR">Github</a>. You can also <a href="mailto:me@eliaz-lr.dev">email me here !</a>
+        <br />
+        I'm interested in a lot of subjects ranging from economics to technology in general.<br />
+        I'm open to offers if you're looking for a full-stack developer. 😄<br />
+        <a href="https://github.com/Eliaz-LR">My Github</a>. <a href="mailto:me@eliaz-lr.dev">Email me here</a> !
     </h3>
 </template>
 
@@ -18,14 +19,14 @@ export default {
     },
     created() {
         this.interval = setInterval(() => {
-            this.age = (this.$dayjs().diff(this.$dayjs('2000-12-03'), 'year',true)).toFixed(9);
+            this.age = (this.$dayjs().diff(this.$dayjs('2000-12-03'), 'year', true)).toFixed(9);
         }, 50)
     }
 }
 </script>
 
 <style scoped>
-a{
+a {
     @apply underline decoration-purple-600;
 }
 </style>

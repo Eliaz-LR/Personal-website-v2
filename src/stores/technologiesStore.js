@@ -62,7 +62,7 @@ export const useTechnologiesStore = defineStore("technologiesStore", {
           "Git is my go-to version control system. I've used it for many projects and I'm very familiar with it. While I tend to use GUIs for most of my Git needs, I'm also familiar with the command line.",
       },
       {
-        name: "C++",
+        name: "C/C++",
         image: new URL("../assets/tech_logo/cpp.svg", import.meta.url).href,
         level: 1,
         category: "Programming Language",
@@ -90,7 +90,7 @@ export const useTechnologiesStore = defineStore("technologiesStore", {
         level: 4,
         category: "Framework",
         comments:
-          "I've used Tailwind CSS to make my websites and web applications.",
+          "Tailwind CSS is my go-to CSS framework. I've used it on most of my projects, including this website. I appreciate how it allows me to quickly make good looking websites. Using it has also made me better at regular CSS.",
       },
       {
         name: "Firebase",
@@ -114,6 +114,14 @@ export const useTechnologiesStore = defineStore("technologiesStore", {
         category: "Other",
         comments:
           "I've used Vite to make my websites and web applications. It provides a dev server and a build system.",
+      },
+      {
+        name: "Node.js",
+        image: new URL("../assets/tech_logo/nodejs.svg", import.meta.url).href,
+        level: 2,
+        category: "Other",
+        comments:
+          "I've used Node.js for the backend of Lyrical Bomb (Coupled with Express.JS and Socket.IO). Having a single language for both the frontend and the backend is quite convenient.",
       },
     ],
   }),
